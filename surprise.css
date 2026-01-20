@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0b0615;
+  font-family: "Poppins", system-ui, sans-serif;
+  color: #ffd9ff;
+}
+
+.surprise-box {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  font-family: "Poppins", system-ui, sans-serif;
+  color: #ffd9ff;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ff9ac5, #ffc3e6);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+/* hide button at first */
+.hidden {
+  display: none;
+}
+
