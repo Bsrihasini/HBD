@@ -1,0 +1,99 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* full-screen black bg and center */
+body {
+  min-height: 100vh;
+  background: #000;                /* black background */
+  font-family: "Poppins", system-ui, sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;         /* center horizontally */
+  align-items: center;             /* center vertically */
+  padding: 2rem 1rem;
+}
+
+/* wrapper just limits width */
+.comic-wrapper {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* card box */
+.comic-card {
+  background: #111;
+  border-radius: 20px;
+  padding: 2rem 1.5rem 2.3rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+}
+
+/* heading + subtitle */
+.title {
+  text-align: center;
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  margin-bottom: 0.8rem;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1.8rem;
+  color: #f5d76e;
+}
+
+/* image row */
+.comic-card > div {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;                 /* stack on small screens */
+}
+
+/* images */
+.comic-card img {
+  flex: 0 0 auto;               /* no stretching */
+  max-width: 400px;             /* adjust this to control size */
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+}
+.spell-text-box {
+  max-width: 480px;            /* controls how narrow/“congested” it is */
+  margin: 0 auto;              /* center in its column */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;                /* space between the two lines */
+  font-size: 1.1rem;           /* adjust size if needed */
+  line-height: 1.3;            /* tighter lines */
+}
+
+/* if this section is in a big horizontal flex container, make it tighter */
+.spell-text-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back-btn {
+  margin-top: 0.6rem;
+  align-self: center;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #f5d76e;
+  color: #f5d76e;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+
+.back-btn:hover {
+  background: #f5d76e;
+  color: #000;
+  transform: translateY(-2px);
+}

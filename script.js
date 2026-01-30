@@ -186,3 +186,9 @@ if (homeBtn) {
 if (questionText) {
   showQuestion();
 }
+//--------------------
+function storyOfus() {
+  // if your page is storyofus.html in same folder
+  window.location.href = "storyofus.html";
+}
+
